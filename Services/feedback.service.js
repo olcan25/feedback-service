@@ -12,7 +12,8 @@ const createFeedbackService = (model, res) => {
       res.status(500).json({
         success: false,
         message:
-          err.message || "Some error occurred while creating the Feedback.",
+          err.message ||
+          "Some error occurred while creating the Feedback model.",
       });
     });
 };
