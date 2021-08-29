@@ -16,5 +16,6 @@ const connectDatabase = () => {
     .catch((err) => {
       console.log(err);
     });
+  mongoose.Promise = global.Promise;
 };
 module.exports = connectDatabase;
